@@ -1,0 +1,45 @@
+/*
+Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.
+        on line 16 of index.js
+
+11: 	extended: true
+12: }));
+13: app.use(bodyParser.json());
+14: 
+15: app.get('/', function(req, res){
+16:     res.sendfile('index.html', { root: "./public/index.html" } );
+17: });
+18: app.post('/scrape', function(req, res){
+19:     Promise.all(
+20:         req.body.map(story => {
+21:             if (story.url){
+
+Backtrace:
+index.js:16
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/engine.rb:494:in `block in tabulate'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/engine.rb:452:in `each_with_index'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/engine.rb:452:in `tabulate'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/engine.rb:417:in `_to_tree'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `each'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/plugin/compiler.rb:294:in `watch'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/plugin.rb:109:in `method_missing'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/gems/sass-3.5.7/bin/sass:13:in `<top (required)>'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/bin/sass:23:in `load'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/bin/sass:23:in `<main>'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `eval'
+/Users/jonathanlorimer/.rvm/gems/ruby-2.5.1/bin/ruby_executable_hooks:24:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Inconsistent indentation: 4 spaces were used for indentation, but the rest of the document was indented using 1 tab.\A         on line 16 of index.js\A \A 11: 	extended: true\A 12: }));\A 13: app.use(bodyParser.json());\A 14: \A 15: app.get('/', function(req, res){\A 16:     res.sendfile('index.html', { root: \"./public/index.html\" } );\A 17: });\A 18: app.post('/scrape', function(req, res){\A 19:     Promise.all(\A 20:         req.body.map(story => {\A 21:             if (story.url){"; }

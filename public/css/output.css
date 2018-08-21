@@ -1,0 +1,60 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  font-family: Futura;
+  font-weight: 300; }
+
+.btn {
+  border: none;
+  box-shadow: none;
+  border-radius: 50rem;
+  cursor: pointer; }
+  .btn:focus {
+    outline: none; }
+
+.hacker-news {
+  position: relative;
+  margin: 0rem 4rem; }
+  .hacker-news .heading {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background-color: #fff;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 2rem 30rem; }
+    .hacker-news .heading__right {
+      display: flex;
+      align-items: baseline; }
+    .hacker-news .heading__header {
+      font-size: 3rem;
+      font-family: 'EB Garamond', serif;
+      font-weight: 700; }
+    .hacker-news .heading__mag-header {
+      margin-right: 2rem;
+      font-size: 1.2rem; }
+    .hacker-news .heading__read-button {
+      background-color: #ffb21a;
+      color: #fff;
+      height: 4rem;
+      width: 12rem;
+      font-size: 1.2rem; }
+      .hacker-news .heading__read-button:hover {
+        background-color: #faa600; }
+  .hacker-news__container {
+    padding-top: 8.5rem;
+    height: 120rem;
+    background-color: #f9f8f6; }
+
+/*# sourceMappingURL=output.css.map */
