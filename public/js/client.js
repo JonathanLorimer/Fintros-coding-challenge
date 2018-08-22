@@ -36,7 +36,7 @@ document.getElementsByClassName('hacker-news__filters--odd-label')[0].addEventLi
 window.addEventListener('scroll', () => {
 	let rect = document.getElementsByClassName('hacker-news__more-posts')[0].getBoundingClientRect();
 	console.log(rect)
-	if (rect.top < 100 && nextUp.length > 0 && newStoriesRef.length > 0){
+	if (rect.top < 250 && nextUp.length > 0 && newStoriesRef.length > 0){
 		articleArray.concat(nextUp)
 		nextUp.forEach(e => {
 			generatePost(e)
