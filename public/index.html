@@ -22,7 +22,7 @@
 			<div class="hacker-news__masthead--tagline">Stories and ideas from Hackernews</div>
 		</div>
 		<form class="hacker-news__filters">
-			<input type="radio" name="filters" id="filter-even" checked>
+			<input type="radio" name="filters" id="filter-even">
 			<label class="hacker-news__filters--even-label"for="filter-even">Even Numbered Articles</label>
 			<label class="hacker-news__filters--middot">&middot;</label>
 			<input type="radio" name="filters" id="filter-odd">
@@ -40,35 +40,29 @@
 				</a>
 			</div>
 			<ul class="hacker-news__post-list">
-				<li class="hacker-news__post-list--root"></li>
-				<li class="hacker-news__post">
-					<a href="#" class="hacker-news__post--link">
-						<div class="hacker-news__post--image-container">
-							<img src="https://picsum.photos/580/350/?random'" alt="" class="hacker-news__post--image">
-						</div>
-						<div class="hacker-news__post--blurb">
-							<div class="hacker-news__post--hacker-diaries">Hacker Diaries</div>
-							<div class="hacker-news__post--title">TITLE</div>
-							<div class="hacker-news__post--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio recusandae possimus id porro ducimus rem aspernatur incidunt? Ab quisquam perferendis sint facilis non officia consectetur, ad explicabo accusamus distinctio quos?</div>
-						</div>
-					</a>
-				</li>
-				<li class="hacker-news__post">
-					<a href="#" class="hacker-news__post--link">
-						<div class="hacker-news__post--image-container">
-							<img src="https://picsum.photos/580/350/?random'" alt="" class="hacker-news__post--image">
-						</div>
-						<div class="hacker-news__post--blurb">
-							<div class="hacker-news__post--hacker-diaries">Hacker Diaries</div>
-							<div class="hacker-news__post--title">TITLE</div>
-							<div class="hacker-news__post--text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio recusandae possimus id porro ducimus rem aspernatur incidunt? Ab quisquam perferendis sint facilis non officia consectetur, ad explicabo accusamus distinctio quos?</div>
-						</div>
-					</a>
-				</li>
 			</ul>
 		</div>
+		<div class="hacker-news__more-posts">
+			<button class="hacker-news__more-posts--button btn">More Posts</button>
+		</div>
+
 	</div>
 	<script src="./js/client.js"></script>
 </body>
+
+<template id="post-template">
+	<li class="hacker-news__post">
+		<a href="#" class="hacker-news__post--link">
+			<div class="hacker-news__post--image-container">
+				<img src="" alt="" class="hacker-news__post--image">
+			</div>
+			<div class="hacker-news__post--blurb">
+				<div class="hacker-news__post--hacker-diaries">Hacker Diaries</div>
+				<div class="hacker-news__post--title"></div>
+				<div class="hacker-news__post--text"></div>
+			</div>
+		</a>
+	</li>
+</template>
 
 </html>

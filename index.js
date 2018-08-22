@@ -16,11 +16,9 @@ app.get('/', function(req, res){
     res.sendfile('index.html', { root: "./public/index.html" } );
 });
 app.post('/scrape', function(req, res){
-	console.log(req.body)
     Promise.all(
         req.body.map(story => {
             if (story.url){
-				console.log(story.url)
            		return requestPromise.get(story.url)
                     .then(e => {
 						let imageURL = e.match(/<meta property="og:image"\scontent="(\S+)"/g)

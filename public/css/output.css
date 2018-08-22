@@ -12,7 +12,8 @@ body {
   box-sizing: border-box;
   font-family: Futura;
   font-weight: 300;
-  height: 100%; }
+  height: 100%;
+  z-index: 0; }
 
 .btn {
   border: none;
@@ -157,12 +158,63 @@ body {
       line-height: 30px;
       font-size: 1.8rem; }
   .hacker-news__post-list {
-    list-style: none; }
+    list-style: none;
+    margin: 6rem auto;
+    max-width: 126rem; }
+  .hacker-news__post:nth-child(odd) {
+    margin-right: 1.8rem; }
   .hacker-news__post {
     height: 72rem;
-    width: 58rem; }
+    width: 61rem;
+    display: inline-block; }
     .hacker-news__post--link, .hacker-news__post--link:active
     .hacker-news__post--link:visited {
-      text-decoration: none; }
+      text-decoration: none;
+      color: #272c2f; }
+    .hacker-news__post--image-container {
+      width: 61rem;
+      height: 35rem; }
+    .hacker-news__post--image {
+      object-fit: cover;
+      width: 61rem;
+      height: 35rem; }
+    .hacker-news__post--blurb {
+      min-height: 36rem;
+      width: 61rem;
+      padding: 5rem 6rem 3.5rem;
+      background-color: #fff; }
+    .hacker-news__post--hacker-diaries {
+      font-size: 1.4rem;
+      font-weight: 100;
+      letter-spacing: 2px;
+      opacity: .4;
+      text-transform: uppercase;
+      color: #272c2f; }
+    .hacker-news__post--title {
+      font-size: 2.7rem;
+      line-height: 4rem;
+      font-weight: 700;
+      margin-top: 1rem;
+      margin-bottom: 2rem; }
+    .hacker-news__post--text {
+      line-height: 30px;
+      font-size: 1.8rem; }
+  .hacker-news__more-posts {
+    width: 100%;
+    height: 40rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: -40rem;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), white); }
+    .hacker-news__more-posts--button {
+      background-color: #ffb21a;
+      color: #fff;
+      height: 4rem;
+      width: 12rem;
+      font-size: 1.2rem;
+      margin-bottom: 5rem; }
+      .hacker-news__more-posts--button:hover {
+        background-color: #faa600; }
 
 /*# sourceMappingURL=output.css.map */
