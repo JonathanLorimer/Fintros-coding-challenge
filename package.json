@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "sass --watch ./public/css/input.scss:./public/css/output.css"
+    "start": "node index.js"
   },
   "author": "Jonathan Lorimer",
   "license": "ISC",
