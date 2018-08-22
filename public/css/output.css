@@ -7,6 +7,12 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 1350px) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (max-width: 1200px) {
+    html {
+      font-size: 37.5%; } }
 
 body {
   box-sizing: border-box;
@@ -14,6 +20,9 @@ body {
   font-weight: 300;
   height: 100%;
   z-index: 0; }
+  @media only screen and (max-width: 1200px) {
+    body {
+      width: 100vw; } }
 
 .btn {
   border: none;
@@ -26,6 +35,9 @@ body {
 .hacker-news {
   position: relative;
   margin: 0rem 4rem; }
+  @media only screen and (max-width: 1200px) {
+    .hacker-news {
+      margin: 0rem; } }
   .hacker-news .heading {
     top: 0;
     left: 0;
@@ -37,13 +49,64 @@ body {
     align-items: baseline;
     padding: 2rem 30rem;
     z-index: 1; }
+    @media only screen and (max-width: 700px) {
+      .hacker-news .heading {
+        padding: 2rem 6rem; } }
+    .hacker-news .heading__logo {
+      display: none;
+      height: 6rem;
+      width: 6rem; }
+      @media only screen and (max-width: 700px) {
+        .hacker-news .heading__logo {
+          display: block; } }
+    .hacker-news .heading__menu {
+      display: none;
+      height: 6rem;
+      width: 6rem;
+      border-radius: 50px;
+      background-color: #ffb21a;
+      position: relative;
+      cursor: pointer; }
+      @media only screen and (max-width: 700px) {
+        .hacker-news .heading__menu {
+          display: block; } }
+    .hacker-news .heading__menu-bars {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      height: 3px;
+      width: 2.8rem;
+      background-color: #fff; }
+      .hacker-news .heading__menu-bars::before {
+        content: '';
+        position: absolute;
+        top: .8rem;
+        left: 0;
+        height: 3px;
+        width: 2.8rem;
+        background-color: #fff; }
+      .hacker-news .heading__menu-bars::after {
+        content: '';
+        position: absolute;
+        top: -.8rem;
+        left: 0;
+        height: 3px;
+        width: 2.8rem;
+        background-color: #fff; }
     .hacker-news .heading__right {
       display: flex;
       align-items: baseline; }
+      @media only screen and (max-width: 700px) {
+        .hacker-news .heading__right {
+          display: none; } }
     .hacker-news .heading__header {
       font-size: 3rem;
       font-family: 'EB Garamond', serif;
       font-weight: 700; }
+      @media only screen and (max-width: 700px) {
+        .hacker-news .heading__header {
+          display: none; } }
     .hacker-news .heading__mag-header {
       margin-right: 2rem;
       font-size: 1.2rem; }
@@ -59,12 +122,18 @@ body {
     padding-top: 8.5rem;
     height: 100%;
     background-color: #f9f8f6; }
+    @media only screen and (max-width: 1200px) {
+      .hacker-news__container {
+        width: 100vw; } }
   .hacker-news__masthead {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 16rem auto 10rem;
     max-width: 126rem; }
+    @media only screen and (max-width: 700px) {
+      .hacker-news__masthead {
+        display: none; } }
     .hacker-news__masthead--title {
       font-family: 'EB Garamond', serif;
       margin: 0 0 1rem;
@@ -91,6 +160,9 @@ body {
     margin: 0 auto;
     max-width: 126rem;
     font-size: 1.8rem; }
+    @media only screen and (max-width: 700px) {
+      .hacker-news__filters {
+        display: none; } }
     .hacker-news__filters #filter-even {
       display: none; }
     .hacker-news__filters #filter-odd {
@@ -141,6 +213,9 @@ body {
       object-fit: cover;
       width: 126rem;
       height: 71rem; }
+      @media only screen and (max-width: 1200px) {
+        .hacker-news__hero-story--image {
+          width: 100vw; } }
     .hacker-news__hero-story--hacker-diaries {
       font-size: 1.4rem;
       font-weight: 100;
@@ -161,12 +236,24 @@ body {
     list-style: none;
     margin: 6rem auto;
     max-width: 126rem; }
+    @media only screen and (max-width: 1200px) {
+      .hacker-news__post-list {
+        width: 100vw;
+        margin: 6rem 0; } }
+    @media only screen and (max-width: 1100px) {
+      .hacker-news__post-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center; } }
   .hacker-news__post:nth-child(odd) {
-    margin-right: 1.8rem; }
+    margin-right: 2rem; }
   .hacker-news__post {
     height: 72rem;
     width: 61rem;
     display: inline-block; }
+    @media only screen and (max-width: 1100px) {
+      .hacker-news__post {
+        margin-bottom: 4rem; } }
     .hacker-news__post--link, .hacker-news__post--link:active
     .hacker-news__post--link:visited {
       text-decoration: none;
