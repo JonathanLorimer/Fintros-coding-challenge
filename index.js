@@ -6,11 +6,13 @@ const requestPromise = require('request-promise-native')
 
 
 // app.use(cors())
-app.use(express.static('public'))
+app.use(express.static(__dirname + '/public'))
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({
 	extended: true
 }));
+
+var port = process.env.PORT || 8080;
 
 app.get('/', function(req, res){
     res.sendfile('index.html', { root: "./public/index.html" } );
@@ -41,4 +43,4 @@ app.post('/scrape', function(req, res){
 
 
 
-app.listen(3000, () => console.log('Example app listening on port 3000!'))
+app.listen(port, () => console.log('Example app listening on port 3000!'))
