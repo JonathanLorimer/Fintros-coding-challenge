@@ -13,6 +13,7 @@ body {
 	box-sizing: border-box;
 	font-family: Futura;
 	font-weight: 300;
+	height: 100%;
 }
 
 .btn {
@@ -38,6 +39,7 @@ body {
 		justify-content: space-between;
 		align-items: baseline;
 		padding: 2rem 30rem;
+		z-index: 1;
 		&__right {
 			display: flex;
 			align-items: baseline;
@@ -64,7 +66,164 @@ body {
 	}
 	&__container {
 		padding-top: 8.5rem;
-		height: 120rem;
+		height: 100%;
 		background-color: #f9f8f6;	
+	}
+	&__masthead {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin: 16rem auto 10rem;
+		max-width: 126rem;
+		&--title {
+			font-family: 'EB Garamond', serif;
+			margin: 0 0 1rem;
+			width: 19rem;
+			text-align: center;
+			font-size: 2.8rem;
+			font-weight: 700;
+		}
+		&--mag {
+			font-size: 9rem;
+			letter-spacing: -4px;
+			line-height: 10rem;
+		}
+		&--tagline{
+			font-size: 1.4rem;
+			font-weight: 100;
+			letter-spacing: 2px;
+			opacity: .4;
+			text-transform: uppercase;
+			line-height: 2rem;
+			margin: 3rem 0 0;
+			z-index: 0;
+		}
+	}
+
+	&__filters {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
+		max-width: 126rem;
+		font-size: 1.8rem;
+		#filter-even {
+			display: none;
+		}
+		#filter-odd {
+			display: none;
+		}
+		#filter-even:checked + .hacker-news__filters--even-label {
+			opacity: 1;
+		}
+		#filter-odd:checked + .hacker-news__filters--odd-label {
+			opacity: 1;
+		}
+		&--even-label {
+			color: #272c2f;
+			opacity: .4;
+			cursor: pointer;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		&--middot {
+			width: 2rem;
+			text-align: center;
+			color: #272c2f;
+    		opacity: .4;
+		}
+		&--odd-label {
+			color: #272c2f;
+			opacity: .4;
+			cursor: pointer;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+	}
+
+	&__post-container {
+	}
+	&__hero-story {
+		margin: 6rem auto;
+		max-width: 126rem;
+		position: relative;
+		&--link,
+		&--link:active
+		&--link:visited {
+			position: relative;
+			text-decoration: none;
+			color: #272c2f;
+		}
+		&--blurb{
+			width: 58rem;
+			min-height: 37rem;
+			position: absolute;
+			bottom: 6rem;
+			margin: 0;
+			position: absolute;
+			right: 0;
+			background: hsla(0,0%,100%,.85);
+			padding: 5rem 6rem 3.5rem;
+		}
+		&--blurb:hover .hacker-news__hero-story--title{
+			text-decoration: underline;
+		}
+		&--image {
+			object-fit: cover;
+			width: 126rem;
+			height: 71rem;
+		}
+		&--hacker-diaries {
+			font-size: 1.4rem;
+			font-weight: 100;
+			letter-spacing: 2px;
+			opacity: .4;
+			text-transform: uppercase;
+			color: #272c2f;
+		}
+		&--title{
+			font-size: 2.7rem;
+			line-height: 4rem;
+			font-weight: 700;
+			margin-top: 1rem;
+			margin-bottom: 2rem;
+		}
+		&--text{
+			line-height: 30px;
+			font-size: 1.8rem;
+		}
+	}
+
+	&__post-list {
+		list-style: none;
+	}
+	&__post {
+		height: 72rem;
+		width: 58rem;
+
+		&--link,
+		&--link:active
+		&--link:visited{
+			text-decoration: none;
+		}
+		&--image-container{
+
+		}
+		&--image{
+
+		}
+		&--blurb{
+
+		}
+		&--hacker-diaries{
+
+		}
+		&--title{
+
+		}
+		&--text{
+
+		}
 	}
 }
